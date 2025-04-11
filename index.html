@@ -2,38 +2,73 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Mesut Oktay - Kişisel Sayfa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesut Oktay - Kişisel Web Sayfası</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 100px;
-            background-color: #f0f0f0;
-            color: #333;
+            font-family: 'Arial', sans-serif;
+            background-color: #1d1d1d;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(45deg, #333, #666);
         }
-        .card {
-            background: white;
-            max-width: 500px;
-            margin: auto;
-            padding: 30px;
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
             border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff5733;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
         }
         a {
-            color: #007acc;
+            color: #ff5733;
             text-decoration: none;
+            font-weight: bold;
         }
         a:hover {
             text-decoration: underline;
         }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 15px;
+            font-size: 1.8rem;
+            color: #ff5733;
+            transition: transform 0.3s ease;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
     </style>
 </head>
 <body>
-    <div class="card">
+
+    <div class="container">
         <h1>Merhaba, ben Mesut Oktay</h1>
-        <p>Bu benim kişisel web sitem.</p>
+        <p>Bu benim kişisel web sitem. Yazılım geliştirici ve teknoloji tutkunu biriyim.</p>
         <p><strong>E-posta:</strong> <a href="mailto:mesutoktay67@hotmail.com">mesutoktay67@hotmail.com</a></p>
         <p><strong>Telefon:</strong> <a href="tel:+905528224981">+90 552 822 49 81</a></p>
+
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/mesutoktay" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/mesutoktay" target="_blank">Twitter</a>
+        </div>
     </div>
+
 </body>
 </html>
